@@ -1,0 +1,48 @@
+\usepackage[T1]{fontenc}
+\usepackage[osf,p]{libertinus}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage[english, main=latin]{babel}
+
+\usepackage[margin = 0.75in]{geometry}
+\usepackage[series={A},noend,noeledsec,nofamiliar,noledgroup]{reledmac}
+\usepackage[sidenotesmarginpage]{reledpar}
+\sidenotemargin{outer}
+\renewcommand{\ledlsnotefontsetup}{\raggedleft\normalsize}
+\renewcommand{\ledlsnotesep}{-0.75em}
+\Xlemmaseparator{:}
+\Xlemmadisablefontselection
+\Xlemmafont{\bfseries}
+\Xarrangement{threecol}
+
+\date{}
+\title{\Huge \itshape In Catilinam\\[1em]}
+\author{\Huge \scshape \textls[125]{cicero}}
+
+\providecommand{\HUGE}{\Huge}
+\newlength{\drop}
+
+\newcommand{\note}[2]{\edtext{\notestyle{#1}}{\Afootnote{#2}}}
+\newcommand{\bce}{\textsc{b.c.e.}}
+\newcommand{\notestyle}[1]{#1}
+\newcommand{\translation}[2]{
+  \begin{pairs}
+    \begin{Leftside}
+      \beginnumbering
+      \autopar
+      #1
+
+      \endnumbering
+    \end{Leftside}
+    \begin{Rightside}
+      \beginnumbering
+      \autopar
+      #2
+
+      \endnumbering
+    \end{Rightside}
+  \end{pairs}
+  \Columns
+}
+% \renewcommand{\notestyle}[1]{\textbf{#1}}

@@ -1,32 +1,6 @@
-\documentclass[a4paper]{article}
-\usepackage[T1]{fontenc}
-\usepackage[osf,p]{libertinus}
-\usepackage{microtype}
-\usepackage{xcolor}
-\usepackage[colorlinks]{hyperref}
-\usepackage[english, main=latin]{babel}
+\documentclass[a4paper, 10pt]{article}
 
-\usepackage[margin = 0.75in]{geometry}
-\usepackage[series={A},noend,noeledsec,nofamiliar,noledgroup]{reledmac}
-\usepackage[sidenotesmarginpage]{reledpar}
-\sidenotemargin{outer}
-\renewcommand{\ledlsnotefontsetup}{\raggedleft\normalsize}
-\renewcommand{\ledlsnotesep}{-0.75em}
-\Xlemmaseparator{:}
-\Xlemmadisablefontselection
-\Xlemmafont{\bfseries}
-
-\date{}
-\title{\Huge \itshape In Catilinam\\[1em]}
-\author{\Huge \scshape \textls[125]{cicero}}
-
-\providecommand{\HUGE}{\Huge}
-\newlength{\drop}
-
-\newcommand{\note}[2]{\edtext{\notestyle{#1}}{\Afootnote{#2}}}
-\newcommand{\bce}{\textsc{b.c.e.}}
-\newcommand{\notestyle}[1]{#1}
-% \renewcommand{\notestyle}[1]{\textbf{#1}}
+\input{preamble.tex}
 
 \begin{document}
 \begin{titlepage}
@@ -43,119 +17,11 @@
   \tableofcontents
 \end{titlepage}
 
-\section{Chapter I}
-\begin{pairs}
-  \begin{Leftside}
-    \beginnumbering
-    \pstart
-    1. Quo usque tandem \note{abutere}{future deponent second person singular of abutor, syncopated form of abuteris}, Catilina, \note{patientia}{ablative after ablative taking abutere} nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit \note{audacia}{subject of iactabit}? \note{Nihilne}{anaphor of nihil from lines 3--6} te nocturnum praesidium Palatii, nihil urbis vigiliae, nihil timor \note{populi}{subjective genitive}, nihil concursus bonorum omnium, nihil hic munitissimus \note{habendi}{gerundive, objective genitive = for having} senatus locus, nihil horum ora voltusque moverunt? \note{Patere}{infinitive in indirect statement introduced by sentis} tua consilia non sentis? constrictam iam horum omnium scientia \note{teneri}{passive infinite in indirect statement introduced by vides} coniurationem tuam non vides? Quid proxima, quid superiore nocte \note{egeris}{subjunctive indirect question}, ubi \note{fueris}{subjunctive indirect question. Same for convocaveris, ceperis, arbitraris. Asyndeton.}, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?
-    \pend
-    \pstart
-    2. \note{O tempora, o mores}{accusative of exclamation}! Senatus haec intellegit, consul videt: hic tamen vivit. Vivit? immo vero etiam in senatum venit, fit publici consilii particeps, notat et designat oculis ad caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu consulis iam pridem oportebat, in te conferri pestem, quam tu in nos machinaris.
-    \pend
-    \pstart
-    3. An vero vir amplissumus, \note{P. Scipio}{was the grandson of P. Scipio Africanus who defeated Hannibal at Zama in 202 \bce}, pontifex maximus, Ti. Gracchum mediocriter labefactantem statum rei publicae privatus interfecit; Catilinam orbem terrae caede atque incendiis vastare cupientem nos consules perferemus? Nam illa nimis antiqua praetereo, quod C. Servilius Ahala Sp. Maelium novis rebus studentem manu sua occidit. Fuit, fuit ista quondam in hac re publica virtus, ut viri fortes acrioribus suppliciis civem perniciosum quam acerbissimum hostem coercerent. Habemus senatus consultum in te, Catilina, vehemens et grave; non deest rei publicae consilium neque auctoritas huius ordinis: nos, nos, dico aperte, consules desumus.
-    \pend
-    \endnumbering
-  \end{Leftside}
-  \begin{Rightside}
-    \beginnumbering
-    \pstart
-    Just how far, I ask, will Catiline misuse our tolerance? For how long still will that madness of yours make fun of us? To what end will your unbridled audacity boast of itself? Hasn’t the nightly garrison on the Palatine moved you, haven’t the patrols of the city, hasn’t the fear of the people, hasn’t the agreement of all the good men, hasn’t this very fortified place for holding the senate, haven’t the faces and expressions of these men moved you? Do you not realise that your plans are exposed? Do you not see that your conspiracy, already bound up, is being held by the knowledge of all these men? Which of us do you judge to be unaware of what you did last night, and the night before, where you have been, which men you have assembled, what plan you have adopted?
-    \pend
-    \pstart
-    What times, what conduct! The senate knows of these things, the consul sees: yet this man lives. He lives? Or rather in truth he still comes into the senate, he is made a participant of public council, he marks and notes with his eyes each one of us for the slaughter. But we, brave men, seem to do enough for the republic, should we avoid the furor and missiles of that man. You, Catiline, ought to have been led to death long ago now by order of the consul, that destruction which you are divising against us ought to have been brought on to you.
-    \pend
-    \pstart
-    But in truth, Publius Scipio, a highly distinguished man, pontifex maximus, while he was a private citizen, killed Tiberius Gracchus when he was somewhat weakening the state of the republic: will we consuls put up with Catiline, wishing to lay waste to the world by means of murder and arson? For I leave out too much of those old examples, namely the fact that Gaius Servilius Ahala killed Suprius Maelius, studying the revolution, with his own hand. There was, there was once such virtue in this republic that brave men repressed a destructive citizen with more harsh punishment than the worst enemy. We have an agreement of the senate against you, Catiline, strong and serious, the republic does not lack resolution nor authority of this order: we, I say openly, we consuls are lacking.
-    \pend
-    \endnumbering
-  \end{Rightside}
-\end{pairs}
-\Columns
-\newpage
+\include{ch1}
+\include{ch2}
+\include{ch3}
+\include{ch4}
 
-\section{Chapter II}
-\begin{pairs}
-  \begin{Leftside}
-    \beginnumbering
-    \pstart
-    4. Decrevit quondam senatus, ut L. Opimius consul videret, ne quid res publica detrimenti caperet; nox nulla intercessit; interfectus est propter quasdam seditionum suspiciones C. Gracchus, clarissimo patre, avo, maioribus, occisus est cum liberis M. Fulvius consularis. Simili senatus consulto C. Mario et L. Valerio consulibus est permissa res publica; num unum diem postea L. Saturninum tribunum pl. et C. Servilium praetorem mors ac rei publicae poena remorata est? At vero nos vicesimum iam diem patimur hebescere aciem horum auctoritatis. Habemus enim huiusce modi senatus consultum, verum inclusum in tabulis tamquam in vagina reconditum, quo ex senatus consulto confestim te interfectum esse, Catilina, convenit. Vivis, et vivis non ad deponendam, sed ad confirmandam audaciam. Cupio, patres conscripti, me esse clementem, cupio in tantis rei publicae periculis me non dissolutum videri, sed iam me ipse inertiae nequitiaeque condemno.
-    \pend
-    \pstart
-    5. Castra sunt in Italia contra populum Romanum in Etruriae faucibus conlocata, crescit in dies singulos hostium numerus; eorum autem castrorum imperatorem ducemque hostium intra moenia atque adeo in senatu videtis intestinam aliquam cotidie perniciem rei publicae molientem. Si te iam, Catilina, comprehendi, si interfici iussero, credo, erit verendum mihi, ne non potius hoc omnes boni serius a me quam quisquam crudelius factum esse dicat. Verum ego hoc, quod iam pridem factum esse oportuit, certa de causa nondum adducor ut faciam. Tum denique interficiere, cum iam nemo tam inprobus, tam perditus, tam tui similis inveniri poterit, qui id non iure factum esse fateatur.
-    \pend
-    \pstart
-    6. Quam diu quisquam erit, qui te defendere audeat, vives, sed vives ita, ut vivis, multis meis et firmis praesidiis obsessus, ne commovere te contra rem publicam possis. Multorum te etiam oculi et aures non sentientem, sicut adhuc fecerunt, speculabuntur atque custodient.
-    \pend
-    \endnumbering
-  \end{Leftside}
-  \begin{Rightside}
-    \beginnumbering
-    \pstart
-    The Senate has decreed long ago, for Lucius Opimius, consul, to see that the republic experiences no harm: darkness obstructed nothing; Gaius Gracchus was killed on account of some suspicion of treachery, descended from a very famous father, grandfather, ancestors; Marcus Fulvius, of consular rank, was killed with is children. By a similar decree of the Senate, the republic was entrusted to consuls Gaius Marius and Lucius Valerius; surely the death penalty inflicted by the state did not keep Lucius Saturnius, tribune of the people, and Gaius Servilius, praetor, waiting a single day afterwards? But in contrast it is now the 20th day that we have allowed the sharp edge of the authority of these men to become blunt. For we have a decree of the senate of this kind, but it is enclosed in the records as if it is concealed in a sheath, in accordance with which decree it is fitting that you, Catiline, have been killed immediately. You live, and you live not to resign but to strengthen your audacity. I wish, senators, that I be merciful, I wish that I do not seem careless in such. Great dangers of the republic, but I now condemn me myself of inaction and negligence.
-    \pend
-    \pstart
-    There is a camp in Italy aimed against the Roman people, located in the narrow passes of Etruria, the number of enemies grows day by day, but you see the general of that camp and the leader of the enemy within the city walls and actually in the senate, every day devising some internal destruction of the republic. If I order you to be arrested, Catiline, if I order you to be killed, I believe, I will have to fear, I suppose, not that all loyal men will say I have acted too late, but that someone will say that I have been too cruel. But I am not yet induced to do what ought to have been done long ago. Only then will you be killed, when no one so wicked, so ruined, so similar to you, will be able to be found, who does not admit that it has not been done in accordance with the law.
-    \pend
-    \pstart
-    As long as there is anyone at all that dares to defend you, you will live, but you will live in such a way, as you do now, that you live, besieged by my many strong guards, so that you will be unable to move yourself against the republic. Moreover the eyes and ears of many will still be watching you unaware, just as they have done up to this point.
-    \pend
-    \endnumbering
-  \end{Rightside}
-\end{pairs}
-\Columns
-\newpage
 
-\section{Chapter III}
-\begin{pairs}
-  \begin{Leftside}
-    \beginnumbering
-    \pstart
-    Etenim quid est, Catilina, quod iam amplius expectes, si neque nox tenebris obscurare coetus nefarios nec privata domus parietibus continere voces coniurationis tuae potest, si illustrantur, si erumpunt omnia? Muta iam istam mentem, mihi crede, obliviscere caedis atque incendiorum. Teneris undique; luce sunt clariora nobis tua consilia omnia; quae iam mecum licet recognoscas.
-    \pend
-    \pstart
-     7. Meministine me ante diem XII Kalendas Novembris dicere in senatu fore in armis certo die, qui dies futurus esset ante diem VI Kal. Novembris, C. Manlium, audaciae satellitem atque administrum tuae? Num me fefellit, Catilina, non modo res tanta, tam atrox tamque incredibilis, verum, id quod multo magis est admirandum, dies? Dixi ego idem in senatu caedem te optumatium contulisse in ante diem V Kalendas Novembris, tum cum multi principes civitatis Roma non tam sui conservandi quam tuorum consiliorum reprimendorum causa profugerunt. Num infitiari potes te illo ipso die meis praesidiis, mea diligentia circumclusum commovere te contra rem publicam non potuisse, cum tu discessu ceterorum nostra tamen, qui remansissemus, caede te contentum esse dicebas?
-    \pend
-    \pstart
-    8. Quid? cum te Praeneste Kalendis ipsis Novembribus occupaturum nocturno impetu esse confideres, sensistine illam coloniam meo iussu meis praesidiis, custodiis, vigiliis esse munitam? Nihil agis, nihil moliris, nihil cogitas, quod non ego non modo audiam, sed etiam videam planeque sentiam.
-    \pend
-    \endnumbering
-  \end{Leftside}
-  \begin{Rightside}
-    \beginnumbering
-    \pstart
-    And as a matter of fact what is, Catiline, what more can you expect, if neither the night can obscure your evil meetings with darkness nor can a private house contain the voices of your conspirators with its walls, if everything is lit up, if everything is bursting out? Change that mind of yours already, believe me, forget about slaughter and arson. You are held from all sides; all. Your plans are clearer to use than light; which now you may review with me.
-    \pend
-    \pstart
-    Do you all remember that I said in the senate on October 21st that Gaius Manlius, the accomplice and servant of your reckless attempt would be in arms on a certain fixed day which was going to be the 27th of October? Surely, Catiline, I was not mistaken about not only such a great matter, so atrocious and unbelievable, but, much more remarkable, the day? I likewise said in the senate, that you had fixed the slaughter of the nobles for the 28th of October, at a time when many leading citizens had fled from Rome not so much for the sake of saving themselves, as for supressing your plans. Surely you cannot deny that you could not have moved against the republic on that very day, because you were shut in by my many guards, my diligence; while you were saying that you were content with the departure of the rest, with my murder, I who had remained behind.
-    \pend
-    \pstart
-    Well. Although you were confident that you would seize control of the Palestrina on the very first day of November by a nocturnal attack, did you realise that the colony was fortified by my command with my guards, sentinels, and patrols? You do nothing, you labour at nothing, you plan nothing, which I do not not only hear, but also see and plainly realise.
-    \pend
-    \endnumbering
-  \end{Rightside}
-\end{pairs}
-\Columns
-\newpage
-
-\section{Chapter IV}
-\begin{pairs}
-  \begin{Leftside}
-    \beginnumbering
-    \pstart
-    alsiufhuas
-    \pend
-    \endnumbering
-  \end{Leftside}
-  \begin{Rightside}
-    \beginnumbering
-    \pstart
-    hi
-    \pend
-    \endnumbering
-  \end{Rightside}
-\end{pairs}
-\Columns
 
 \end{document}
