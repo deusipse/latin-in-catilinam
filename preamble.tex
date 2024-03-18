@@ -6,7 +6,7 @@
 \usepackage[english, main=latin]{babel}
 
 \usepackage[margin = 0.75in]{geometry}
-\usepackage[series={A},noend,noeledsec,nofamiliar,noledgroup]{reledmac}
+\usepackage[series={A},noend,noeledsec,noledgroup]{reledmac}
 \usepackage[sidenotesmarginpage]{reledpar}
 \sidenotemargin{outer}
 \renewcommand{\ledlsnotefontsetup}{\raggedleft\normalsize}
@@ -15,6 +15,7 @@
 \Xlemmadisablefontselection
 \Xlemmafont{\bfseries}
 \Xarrangement{threecol}
+\arrangementX{threecol}
 
 \date{}
 \title{\Huge \itshape In Catilinam\\[1em]}
@@ -25,6 +26,7 @@
 
 \newcommand{\notestyle}[1]{#1}
 \newcommand{\note}[2]{\edtext{\notestyle{#1}}{\Afootnote{#2}}}
+% \newcommand{\note}[2]{\notestyle{#1}{\footnoteA{#2}}}
 \newcommand{\bce}{\textsc{b.c.e.}}
 \newcommand{\translation}[2]{
   \begin{pairs}
